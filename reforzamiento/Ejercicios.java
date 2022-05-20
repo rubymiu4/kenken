@@ -11,6 +11,7 @@ public class Ejercicios {
       //Definir Variable
       int diaSem;
       String mensaje;
+      String primeraParteM="Ese dia toca el curso de:";
       //Leer Datos
       Scanner leerT=new Scanner(System.in);
       System.out.println("Ingrese un dia de la Semana:\n1=Dom"+
@@ -20,18 +21,18 @@ public class Ejercicios {
       if(diaSem==1 || diaSem==7){
           mensaje="No hay clases";
       }else if (diaSem==2) {
-          mensaje="Matematica";
+          mensaje=primeraParteM+"Matematica";
       }else if (diaSem==3 || diaSem==5){
-          mensaje="Fundamentos de Programacion";
+          mensaje=primeraParteM+"Fundamentos de Programacion";
       }else if (diaSem==4) {
-          mensaje="Capacidades Comunicativas"; 
+          mensaje=primeraParteM+"Capacidades Comunicativas"; 
       }else if (diaSem==6) {
-          mensaje="Introducion a Sistemas"; 
+          mensaje=primeraParteM+"Introducion a Sistemas"; 
       }else{
-          mensaje="El dia que coloco no existe";}
+          mensaje="El dia que coloco no es valido";}
 
       //Datos de Salida
-      System.out.println("Toca el curso de:"+mensaje);
+      System.out.println(""+mensaje);
 }    
 
     public static void main(String[] args) {
